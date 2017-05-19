@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>烟草公司生产管理技能300问</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/barrier.css">
+    <link rel="stylesheet" href="" id="mobileCSS">
+    <link rel="stylesheet" href="" id="commonCSS">
+    <script>
+        (function(){
+            if((/Android|iPhone|IOS|iPad/g).test(navigator.userAgent)){
+                document.getElementById("mobileCSS").setAttribute("href", "css/barrierMobile.css");  
+                document.getElementById("commonCSS").setAttribute("href", "css/commonMobile.css");  
+            }
+        })();
+    </script>
+    <script src="js/APIWrapper.js"></script>
+    <script src="js/SCOFunctions.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="prefetch" href="challenge.html">
+</head>
+<body>
+    
+    <section class="container" id="container">
+        
+        <header class="head" id="header">
+            <article id="score"><span class="scoreText">data</span></article>
+            <article id="total"><span class="scoreText">data</span></article>
+            <article id="partTotal"><span class="scoreText">data</span></article>
+        </header>
+        
+        <section class="main" id="main">
+            <img src="pic/barrier-background2.jpg" alt="" id="backgroundImage">
+            <section class="content" id="mainContent">
+                
+               
+                <!--单元选项内容-->
+                <div class="unitContent" id="unitContent1_1">
+                    <!--单元内容的标题开始-->
+                    <div class="unitTitle">
+                        <img src="pic/1-1.png" alt="" class="titleImage">
+                        <!--以背景座位当前标题显示内容-->
+                        <img src="pic/Lock.png" alt="" class="locking">
+                        <span class="unitTotal">10/40</span>
+                    </div> 
+                    <!--单元内容的标题结束-->
+                    
+                    <!--展示当前的站中的内容表示的即关卡内容。-->
+                    <div class="unitInfo">
+                        <div class="challDiv" id="challDiv1_1_1">
+                            <img src="pic/1-1-1.png" alt="" class="challenge"
+                            id="chall1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar2">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar3">
+                            
+                            <p class="challengeTitle">1-1-1</p>
+                        </div>
+                        
+                        <div class="challDiv"  id="challDiv1_1_2">
+                            <img src="pic/1-1-2.png" alt="" class="challenge"
+                            id="chall1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar2">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar3">
+                            
+                            <p class="challengeTitle">1-1-2</p>
+                        </div>
+                        <div class="challDiv"  id="challDiv1_1_2">
+                            <img src="pic/1-1-3.png" alt="" class="challenge"
+                            id="chall1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar2">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar3">
+                            
+                            <p class="challengeTitle">1-1-3</p>
+                        </div>
+                        <div class="challDiv"  id="challDiv1_1_2">
+                            <img src="pic/1-1-4.png" alt="" class="challenge"
+                            id="chall1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar1">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar2">
+                            
+                            <img src="pic/star-light.png" alt="" class="challStar3">
+                            
+                            <p class="challengeTitle">1-1-4</p>
+                        </div>
+                    </div>
+                    <!--展示信息站内容结束-->
+                    
+                    <!--页面内容遮板-->
+                    <div class="cover"></div>
+                </div>
+                
+            </section>
+            
+        </section>
+        
+        <section class="barrierLock" id="barrierLock">
+            <img src="pic/barrier-lock.png" alt="" class="barrierLocking">
+            <img src="pic/barrier-lock-btn.png" alt="" class="lockBtn" id="lockBtn">
+        </section>
+        
+        <footer class="footer" id="footer">
+            <div class="nextPage" id="nextPage"></div>
+            <div class="lastPage" id="lastPage"></div>
+            <div id="returnBtn"></div>
+            <div id="helpBtn"></div>
+        </footer>
+        
+    </section>
+    <audio src="soung/help.wav" id="helpVideo"></audio>
+    <audio src="soung/click.wav" id="clickVideo"></audio>
+</body>
+<script src="js/BackUp/PlantForm.js"></script>
+<script src="js/BackUp/Questions.js"></script>
+<script src="js/BackUp/HrefOperation.js"></script>
+<script src="js/BackUp/Events.js"></script>
+<script src="js/BackUp/Controller.js"></script>
+<script src="js/Tool/Preload.js"></script>
+<script src="js/Tool/ChallengeName.js"></script>
+<script src="js/unified.js"></script>
+
+<script src="js/barrier.js"></script>
+</html>

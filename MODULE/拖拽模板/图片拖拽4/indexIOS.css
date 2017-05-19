@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-left: 0.5%;
+}
+
+.type{
+    width: 99%;
+    position: relative;
+    height: 62%;
+    margin-top: 0%;
+}
+
+.picture{
+    
+    position: relative;
+    left: 50%;
+    margin-left: -33.1%;
+    width: 66%;
+    height: 100%;
+}
+
+.imageStyle{
+    height: 100%; 
+    width: 100%;
+}
+
+.typeBox{
+    width: 17%;
+    height: 19.4%;
+    position: relative;
+    background-color: #e5e5e5;
+    overflow: visible;
+}
+
+#typeBox1{
+    position: absolute;
+    top: 25%;
+    left: 0;   
+}
+
+#typeBox2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+#typeBox3{
+    position: absolute;
+    top: 25%;
+    left: 82.8%;
+}
+
+#typeBox4{
+    position: absolute;
+    top: 50%;
+    left: 82.8%;
+}
+hr{
+        margin-bottom: 10px;  
+    margin-top: 3px;
+}
+
+.specific{
+    height: 20%;
+    width: 99%;
+    padding-top: 0%;
+    position: relative;
+}
+
+.specification{
+        display: inline-block;
+    height: 60.2%;
+    line-height: 34.766px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    width: 16%;
+    text-align: left;
+    box-shadow: 3px 3px 9px #999;
+    background-color: #fff;
+    font-family: 微软雅黑;
+    font-size: 170%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.specification3{
+    display: inline-block;
+    width: 94%;
+    height: 100%;
+    line-height: 34.766px;
+    padding-left: 2.94%;
+    padding-right: 2.94%;
+    text-align: left;
+    box-shadow: 3px 3px 9px #999;
+    background-color: #fff;
+    font-family: 微软雅黑;
+    font-size: 170%;
+    vertical-align: top;
+}
+
+.specification4{
+    display: inline-block;
+    width: 94%;
+    height: 100%;
+    line-height: 34.766px;
+    padding-left: 2.94%;
+    padding-right: 2.94%;
+    text-align: left;
+    box-shadow: 3px 3px 9px #999;
+    background-color: #fff;
+    font-family: 微软雅黑;
+    font-size: 170%;
+    color: #910000;
+    vertical-align: top;
+}
+
+.specification2{
+    display: inline-block;
+    height: 60.2%;
+    line-height: 34.766px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    width: 16%;
+    background-color: #e5e5e5;
+    font-family: 微软雅黑;
+    font-size: 170%;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.innerSpec{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;   
+}
+
+h2 {
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: #006555;
+    background-image: url(./pic/title.png);
+    background-size: 102% 102%;
+    background-position: center;
+    padding: 3%;
+    padding-left: 8%;
+    font-size: 260%;
+}
+
+
+
+.submitBtn{
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    font-size: 200%;
+    color: #fff;
+    background-image: url(./pic/submitBtn.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 17%;
+    height: 14%;
+    background-position: center;
+    line-height: 137px;
+    position: relative;
+    margin-left: 80%;
+    margin-top: -7%;
+}
+
+.bigger{
+    height:  100%;
+    width: 100%;
+    position: relative;
+    transform: rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+    -moz-transform:rotate(90deg); 	 /*Firefox */
+    -webkit-transform:rotate(90deg);
+    top: 19.5%;
+    left: -30%;
+    background-color: #f5f4fa;
+}
+
+.dialog{
+    position: fixed;
+    width: 102%;
+    height: 102%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./pic/right.png);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: auto 100%;
+    z-index: 101;
+}
+
+.dialogBlank{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 102%;
+    height: 102%;
+    background-color: #666;
+    opacity: 0.7;
+    background-size: 100% 100%;   
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.tip{
+    background-image: url(./pic/tip.png);
+    width: 27%;
+    height: 50px;
+    background-size: 100%;
+    position: relative;
+    margin-left: 54%;
+    margin-top: -5.5%;
+}
+
+::webkit-scrollbar{
+    background-color: #999;
+    border: 0px;
+    border-radius: 4px;
+}

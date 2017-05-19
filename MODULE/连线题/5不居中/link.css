@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+/*内层容器*/
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #eee;
+    clear: both;
+}
+/*
+@media all and (min-width:700px) and (min-height:800px){
+    .container{
+        width: 112%;     
+    }
+}
+*/
+
+
+/*canvas设置*/
+.drawing{
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+    z-index: 100;
+}
+
+/*左边部分设置*/
+.partLeft{
+    position: relative;
+    margin-top: 1%;
+    margin-left: 3.5%;
+    width: 23%;
+    display: inline-block;
+}
+
+/*手机适配*/
+/*
+@media all and (min-width:700px) and (min-height:800px){
+    .partLeft{
+        position: relative;
+        margin-left: 3.5%;
+        width: 25%;
+        height: 70%;
+    }
+}
+*/
+
+/*左边选项设置*/
+.partLeft > p{
+    width: 89%;
+    padding-top: 7.48%;
+    padding-bottom: 7.48%;
+    padding-right: 4%;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 4%;
+    font-family: 微软雅黑;
+    font-size: 125%;
+    border: 2px #006555 solid;
+    border-radius: 12px;
+    background-color: #fff;
+    position: relative;
+}
+
+/*左边选项圆点设置*/
+.partLeft>p:before{
+    content: " ";
+    position: absolute;
+    top: 43%;
+    left: 97.6%;
+    width: 5.5%;
+    height: 19%;
+    background-color: #f8a200;
+    border-radius: 20px;
+}
+
+/*
+@media all and (max-height:730px){
+    .partLeft > p{
+        font-size: 130%;
+    }
+}
+*/
+
+/*手机适配*/
+/*
+@media all and (min-width:700px) and (min-height:800px){
+    .partLeft > p{
+        font-size: 250%; 
+        height: 8%;
+        padding-top: 9%;
+        padding-bottom: 9%;
+        margin-bottom: 10.5%;
+    }
+    .partLeft>p:before{
+        width:6.2%;
+        top: 40%;
+    }
+}
+*/
+
+/*右边选择模块的*/
+.partRight{
+    position: relative;
+    margin-top: -33%;
+    margin-left: 40.5%;
+    width: 60%;
+}
+
+/*手机适配*/
+/*
+@media all and (min-width:700px) and (min-height:800px){
+    .partRight{
+        position: relative;
+        top: -70%;
+        margin-left: 38%;
+        width: 62%;
+        height: 70%;
+    }
+}
+*/
+
+/*右边选项设置*/
+.partRight > p{
+    width: 93%;
+    padding-top: 2.868%;
+    padding-bottom: 2.868%;
+    padding-left: 1.534%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1.515%;
+    font-family: 微软雅黑;
+    font-size: 125%;
+    border: 2px #006555 solid;
+    border-radius: 12px;
+    background-color: #fff;
+    position: relative;
+}
+
+/*选项圆点设置*/
+.partRight>p:before{
+    content: " ";
+    position: absolute;
+    top: 42%;
+    left: -1.3%;
+    width: 2.1%;
+    height: 19%;
+    background-color: #f8a200;
+    border-radius: 20px;
+}
+/*
+@media all and (max-height:730px){
+    .partRight > p{
+        font-size: 130%;
+    }
+}
+*/
+
+/*手机适配*/
+/*
+@media all and (min-width:700px) and (min-height:800px){
+    .partRight > p{
+        font-size: 250%;
+        width: 93%;
+        height: 8%;   
+        padding-top: 3.626%;
+        padding-bottom: 3.626%;
+        margin-bottom: 4.234%;
+    }
+    .partRight>p:before{
+        width: 2.4%;
+        top: 40%;
+    }
+}
+*/
+
+/*提交按键的样式设置*/
+.submitBtn{
+    background-image: url("pic/submitBtn.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 12%;
+    height: 4%;
+    clear: both;
+    padding: 3%;
+    text-align: center;
+    padding-top: 3.5%;
+    margin-left: 81%;
+    font-family: 微软雅黑;
+    font-size: 135%;
+    color: white;
+    z-index: 101;
+    margin-top: -1.8%;
+}
+
+/*最外层容器样式*/
+.bigger {
+    height: 85%;
+    width: 93%;
+    margin: auto;
+    padding: 3%;
+    position: relative;
+}
+
+/*手机端最外层样式*/
+/*.bigger2 {
+    height: 100%;
+    width: 100%;
+    transform: rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+/*    -moz-transform:rotate(90deg); 	 Firefox */
+/*    -webkit-transform:rotate(90deg);  Safari 和 Chrome */
+/*
+    -o-transform:rotate(90deg); 
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    position: relative;
+    top: 13.45%;
+    left: -22%;
+}
+*/
+
+/*标题样式设置*/
+h2 {
+    font-family:微软雅黑;
+    font-weight: 700;
+    font-size: 200%;
+    color: #006555;
+    margin-left: 2%;  
+    background-image: url(pic/title.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 3%;
+    padding-left: 9%;
+}
+
+/*
+@media all and (max-width:900px){
+    h2{
+        font-size: 150%; 
+    }
+    
+}
+
+@media all and (max-height:700px){
+    h2 {
+        font-size: 150%;
+    }
+}
+
+@media all and (min-width:700px) and (min-height:800px){
+     h2{
+         font-size: 300%;
+         font-weight: 900;
+         padding: 3%;
+         padding-left: 9%;
+    }
+}
+*/
+
+/*提示图片背景*/
+.dialogBlack{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left:0%;
+    border-radius: 10px;
+    background-color: #444;
+    opacity: 0.5;
+    background-size: 100% 100%;
+    z-index:102;
+}
+
+/*
+@media all and (min-width:700px) and (min-height:800px){
+    .dialogBlack{
+        width: 117%;
+        height: 100%;
+        top: -3.3%;
+        left: -2%;
+    }
+}
+*/
+
+/*提示内容设置*/
+.dialog{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-image: url(./pic/right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    /* border: 1px red solid; */
+    border-radius: 10px;
+    z-index: 103;
+}
+/*
+
+@media all and (min-width:700px) and (min-height:800px){
+    .dialog{
+        width: 117%;
+        height: 100%;
+        top: -3.3%;
+        left: -2%;
+    }
+}
+*/
+
+/*提示内容显示*/
+.littleTip{
+    width: 34%;
+    height: 12%;
+    position: relative;
+    margin-left: 40%;
+    background-image: url(./pic/tip.png);
+    background-size: 100% 100%;   
+    z-index: 102;
+}
+
+/*
+@media all and (max-height:730px){
+    .littleTip{
+        top: 85.5%;
+    }
+}
+*/
+
+/*
+@media all and (max-height:700px){
+    .littleTip{
+        top: 86.5%;
+    }
+}
+
+@media all and (min-width:700px) and (min-height:800px){
+    .littleTip{
+        top: 87.4%;
+        left: 37.5%;
+        width: 41%;
+        height: 10%
+    }
+}*/

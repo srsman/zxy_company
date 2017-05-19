@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>烟草公司生产管理技能300问</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="" id="mobileCSS">
+    <link rel="stylesheet" href="" id="commonCSS">
+    <script>
+        (function(){
+            if((/Android|iPhone|IOS|iPad/g).test(navigator.userAgent)){
+                document.getElementById("mobileCSS").setAttribute("href", "css/homeMobile.css");  
+                document.getElementById("commonCSS").setAttribute("href", "css/commonMobile.css");  
+            }
+        })();
+    </script>
+    <script src="js/APIWrapper.js"></script>
+    <script src="js/SCOFunctions.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    
+    <link rel="prefetch" href="barrier.html">
+    <link rel="prefetch" href="challenge.html">
+</head>
+<body>
+    <section class="container" id="container">
+        
+        <section class="main" id="main">
+            
+            <!--3级别跳转按键通过div内容进行变换-->
+            <div class="levelDiv" id="tech">
+                <div class="levelHint" id="techHint">总站数: data/8</div>
+            </div>
+            <div class="levelDiv" id="business">
+                <div class="levelHint" id="busHint">总站数: data/3</div>
+            </div>
+            <div class="levelDiv" id="manage">
+                <div class="levelHint" id="manHint">总站数: data/3</div>
+            </div>
+            
+        </section>
+        
+        <section id="levelAccomplish" style="display:none;"> <!--style="display:none;"-->
+            <img src="pic/complete.png" alt="" class="textContent" id="textContent">
+            <div class="middle-content">
+				<img src="pic/complete-start.png" id='star-left' alt="">
+				<div id="com-text">答对000题，得分xxxxxxx分</div>
+				<img src="pic/complete-start.png" id='star-right' alt="">
+            </div>
+        </section>
+        
+        <section id="userList" style="display:none;">
+        	<img src="pic/lists.png" id="userListBack" class="" alt="">
+        	<div class="listContent" id="listContent">
+        		<div class="noData" id="noData" style="display:none;">
+        			当前还无人上榜。
+        		</div>
+<!--
+        		<div class="listOption" id='listOption'>
+        			<div class="option-background"></div>
+        			<div class="list-number">1</div>
+        			<span class="userName">人物名称</span>
+					<span class="companyName"><div id='marquee1' class='marquee'>公司名称适配是个以上的字符长度，多则省略</div></span>
+        			<div class="option-counting">
+        				<img src="pic/star.png" class='option-star' alt="">
+        				<span class="option-count-number">1000000</span>
+        			</div>
+        		</div>
+-->
+        	</div>
+        </section>
+        
+        <footer class="footer" id="footer">
+            <div id="resultBtn"></div>
+            <div id="helpBtn"></div>
+        </footer>
+        
+    </section>
+    <audio src="soung/help.wav" id="helpVideo"></audio>
+    <audio src="soung/click.wav" id="clickVideo"></audio>
+</body>
+<script src="js/BackUp/PlantForm.js"></script>
+<script src="js/BackUp/Questions.js"></script>
+<script src="js/BackUp/HrefOperation.js"></script>
+<script src="js/BackUp/Events.js"></script>
+<script src="js/BackUp/Controller.js"></script>
+<script src="js/Tool/Preload.js"></script>
+<script src="js/unified.js"></script>
+
+<script src="js/home.js"></script>
+</html>

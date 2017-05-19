@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+		<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<link rel="stylesheet" href="" id='mobileCss'>
+	
+	
+	<script src='./utile/APIWrapper.js'></script>
+	<script src='./utile/SCOFunctions.js'></script>
+	<script src="./utile/vue.js"></script>
+	<script src="./utile/util.js"></script>
+	
+	
+</head>
+<body>
+	<div class="app" id="app">
+	<section id="loadPage" v-if="seem">
+		<img src="./pic/loading.jpg" alt="">
+		<div class="load">
+			<div class="schedule" v-bind:style="{width:precentage+'%'}"></div>
+		</div>
+		<div class="loaded">
+			{{precentage}}%
+		</div>
+	</section>
+	
+	<section id="homePage" v-if="seem">
+		<img src="./pic/homepage.jpg" id="homeBack" alt="">
+		<div class="text">
+			<p v-for='articles in article'>{{articles}}</p>
+		</div>
+		<button class="startBtn" v-on:click="starting">开始进行测试</button>
+	</section>
+	
+	<section id="quesPage" v-if="seem">
+		<img src="./pic/question.jpg" alt="">
+		<div class="ques-info">
+			<div class="number">
+				<img v-bind:src="imageSrc">
+				<p>{{counter}}</p>
+			</div>
+			<div class="type">
+				{{ques.type}}
+			</div>
+		</div>
+		<div class="ques-content">
+			<div class="question">
+				{{ques.question}}
+			</div>
+			<div class="option" v-for="op in ques.option" v-on:click="choose">
+				{{op}}
+			</div>
+		</div>
+		<button class="pre-ques" v-if="preSeem" v-on:click="preQuestion">{{preques}}</button>
+		<button class="next-ques" v-if="nextSeem" v-on:click="nextQuestion">{{nextques}}</button>	
+	</section>
+	
+	<section id='finalPage' v-if='seem'>
+		<img src="./pic/final.jpg" alt="">
+		<button class="rulesBtn"  v-on:click="openStack"><span>评分标准</span><div class="rightConer">&gt;</div></button>
+		<div class="rulesContent" v-on:click="closeStack" v-if='stackseem'>
+			<div class="title"><img src="./pic/rules.png" alt=""></div>
+			<div class="content-rules" v-for='rule in rules'>
+				<div class='rules-limit'>{{rule.limit}}</div>
+				<div class='rules-explain'>{{rule.explain}}</div>
+			</div>
+		</div>
+		<div class="total">
+			<img src="./pic/total.png" alt="">
+			<article>本次得分<span>{{total}}</span></article>
+		</div>
+		<div class="exp-title">解析</div>
+		<div class="explain">{{explain}}</div>
+		<button class="restart" v-on:click="restart">重新开始</button>
+		<button class="explaination" v-on:click="explaination">详尽解析</button>
+	</section>
+	
+	<section id="explainPage" v-if='seem'>
+	
+		<img src="./pic/explaination.jpg" id="explainBack" alt="">
+		<div class="title">解析</div>
+		<div class="content">
+			<div class="infoofexplain" v-for='infos in info'>
+				<div class='limit'>{{infos[0]}}</div>
+				<div class="explainInfo">{{infos[1]}}</div>
+			</div>
+		</div>
+		<button class="exp-restart" v-on:click='restart'>重新开始</button>
+		<button class="exp-toFinal" v-on:click='toFinal'>返回结果</button>
+	</section>
+	</div>
+	<script>
+		(function(){
+			if(/Android|iPhone|IOS/.test(window.navigator.userAgent)){
+				document.getElementById('mobileCss').setAttribute("href", "./stylesheets/mobile.css");	
+			}
+		})();
+	</script>
+	<script src="./component/component.js"></script>
+</body>
+</html>

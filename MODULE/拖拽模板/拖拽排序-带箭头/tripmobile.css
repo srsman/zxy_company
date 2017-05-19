@@ -1,0 +1,175 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+     
+    width: 100%;
+    height: 100%;
+    
+}
+
+.bigger{
+    
+    width: 102%;
+    height: 105%;
+    margin: auto;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.headTitle{
+    padding: 3%;
+    width: 95%;
+    margin: auto;  
+}
+
+.titleImage{
+    width: 160px;
+}
+
+.title{
+    position: relative;
+    font-family: 微软雅黑; 
+    color: #006555;
+    margin-top: -120px;
+    margin-left: 148px;
+    font-size: 290%;  
+}
+
+.titleHr{
+    width: 97%;
+    margin: auto;
+    background-color: #006555;
+    border: none;
+    height: 2px;
+}
+
+.floorHr{
+    width: 97%;
+    margin: auto;
+    background-color: #006555;
+    border: none;
+    height: 2px;
+    margin-bottom: 1%;
+}
+
+#showout{
+    width: 68%;
+    margin-left: 17%;
+    border-left: 2px #006555 solid;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    position: relative;
+}
+
+.number{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-family: 微软雅黑;
+    background-color: #006555;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 250%;
+    color: white;
+    position: relative;
+    margin-left: -30px;
+}
+
+.content{
+    position: relative;
+    width: 90%;
+    border: 2px #006555 solid;
+    font-size: 250%;
+    font-family: 微软雅黑;
+    font-weight: 600;
+    margin-top: -14%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    margin-left: 9%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.stepImage{
+    width: 14%;
+    position: relative;
+    margin-left: 84%;
+    margin-bottom: 8%;
+}
+.tip{
+    background-image: url(./pic/tip.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    width: 579px;
+    height: 100px;
+    margin-left: 4%;
+    margin-top: 38px;  
+}
+
+.submitBtn{
+    position: relative;
+    background-image: url(./pic/submitBtn.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: white;
+    width: 394px;
+    height: 120px;
+    padding-top: 75px;
+    margin-left: 58%;
+    margin-top: -20px;
+    font-size: 270%; 
+}
+
+
+.dialogblank{
+    position:fixed;  
+    top: 0%;
+    left: 0%;
+    width: 102%;
+    height: 100%; 
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.dialog{
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    width: 102%;
+    height: 100%;
+    background-image: url(./pic/wrong2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+@media screen and (min-width:700px) and (min-height:800px){
+    .dialog{
+        position: fixed;
+        background-image: url(./pic/wrong.png);     
+    }
+}

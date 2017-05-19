@@ -1,0 +1,27 @@
+html{
+	font-size: 100%;	
+}
+
+#score{
+    height: 76%;   
+}
+
+#total{
+    height: 76%;   
+}
+
+#partTotal{
+    height: 76%;   
+}
+
+#helpBtn{
+    width: 11.1%;   
+}
+
+#returnBtn{
+    width: 11.1%;   
+}
+
+.scoreText{
+    font-size: 2rem;   
+}

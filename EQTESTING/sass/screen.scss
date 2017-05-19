@@ -1,0 +1,448 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+
+@mixin fontstuff($style:微软雅黑, $size:1rem){
+	font:{
+		family:$style;
+		size:$size;
+		weight: 900;
+	}
+	line-height: $size+0.5rem;
+}
+
+@mixin sizer{
+	@media screen and (max-height: 772px){
+		font-size: 95%;
+	}	
+	@media screen and (max-height: 732px){
+		font-size: 90%;
+	}	
+	@media screen and (max-height: 709px){
+		font-size: 85%;
+	}
+}
+
+@mixin pocenter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+@mixin pocenter_x {
+	position:absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+@mixmin pocenter_y {
+	position:absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+
+@mixin btnStyle {
+	border: 2px solid #cdfe9d;
+	font-size: 1.5rem;
+	font-family: 微软雅黑;
+	color:#cdfe9d;
+	background-color: #010818;
+	padding: 10px;
+	border-radius: 200px;
+	font-weight: 900;
+	padding-left: 5%;
+    padding-right: 5%;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	@include sizer;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.app{
+	@include fontstuff;	
+	@include pocenter;
+	outline: none;
+	@at-root
+	#loadPage{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		img{
+			height: 100%;	
+		}
+		.load{
+			overflow: hidden;
+			@include pocenter_x;
+			height: 3%;
+			top: 70%;
+			width: 60%;
+			background-color: #c9c9c9;
+			border-radius: 100px;
+			.schedule{
+				height: 100%;
+				background-color: #5bd3ff;
+				border-radius: 100px;	
+			}
+		}
+		.loaded{
+			@include pocenter_x;
+			top: 77%;
+			width: 10%;
+			text-align: center;
+			font-size: 1.5rem;
+			color: #5bd3ff;	
+		}
+		
+	}
+	@at-root
+	#homePage{
+		width: 100%;
+		margin-bottom: -1%;
+		#homeBack{
+			position: absolute;
+    		top: 0;	
+		}
+		.text{
+			color: white;
+			width: 80%;
+			padding-left: 10%;
+			padding-right: 10%;
+			position: relative;
+    		margin-top: 130%;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			p{
+				text-indent: 2rem;
+			}
+			@media screen and (max-height: 661px){
+				top: 500px;
+			}
+		}
+		.startBtn{
+			@include btnStyle;
+			position: relative;
+    		margin-top: 15%;
+			left: 28%;
+			
+			@media screen and (max-height: 661px){
+				top: 1050px;
+			}	
+		}
+	}
+	
+	@at-root
+	#quesPage{
+		width: 100%;
+		height: 100%;
+		color: white;
+		overflow: hidden;
+		img{
+			height: 100%;	
+		}
+		.ques-info{
+			position: absolute;
+			top: 14%;
+			left: 10%;
+			width: 80%;
+			.number{
+				width: 22%;
+				position: relative;
+				display: inline-block;
+				p{
+					@include pocenter;
+					height: 70%;
+					width: 75%;
+					text-align: center;
+					font-size: 3rem;
+					line-height: 3rem;
+					text-shadow: 0px 0px 2px #000;	
+				}
+			}
+			.type{
+				display: inline-block;
+				font-size: 2rem;
+				padding: 1%;
+				position: absolute;
+				top: 40%;
+				left: 24%;
+				color: #6fdedb;
+				letter-spacing: 3px;	
+			}
+		}
+		.ques-content{
+			position: absolute;
+			top: 26%;
+			left: 10%;
+			font-size: 1.4rem;	
+			font-weight: 400;
+			letter-spacing: 1px;
+			width: 80%;
+			.question{
+				width: 100%;
+    			line-height: 2rem;	
+			}
+			.option{
+				margin-top: 20px;
+				padding-left: 12%;
+				position: relative;
+			}
+			.option::before{
+				content: " ";
+				display: inline-block;
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				border: 5px solid #fff;
+				background-color: #434343;
+				border-radius: 100px;
+				margin-right: 3px;
+				left: 0;
+				bottom: 0;
+			}
+			.beChoosed{
+			    margin-top: 20px;
+				padding-left: 12%;
+				position: relative;
+			}
+			.beChoosed::before{
+				content: " ";
+				display: inline-block;
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				border: 5px solid #000b19;
+				background-color: #d5ffa4;
+				box-shadow: 0px 0px 3px #d5ffa4;
+				border-radius: 100px;
+				margin-right: 3px;
+				left: 0;
+				bottom: 0;	
+			}
+		}
+		.next-ques{
+			position: absolute;
+			bottom: 15%;
+			right: 20%;	
+			@include btnStyle;
+		}
+		.pre-ques{
+			position: absolute;
+			bottom: 15%;
+			left: 20%;	
+			@include btnStyle;	
+		}
+	}
+	
+	@at-root
+	#finalPage{
+		width: 100%;
+		height: 100%;
+		mmargin-bottom: -1%;
+		overflow: hidden;
+		img{
+			height: 100%;	
+		}
+		.rulesBtn{
+			width: 27%;
+			border: 1px solid #cdfe9d;
+			border-radius: 10px;
+			position: absolute;
+			top: 7%;
+			left: 9%;
+			padding: 5px;
+			font-size: 1.2rem;
+			background-color: #010818;
+			font-family: 微软雅黑;
+			font-weight: 900;
+			color: #fff;
+			letter-spacing: 2px;
+			text-align: center;
+			outline: none;
+			.rightConer{
+				display: inline-block;
+				border: 1px solid #CDFE9D;
+				padding-left: 4%;
+				padding-right: 3%;
+				border-radius: 100px;
+			}
+		}
+		.rulesContent{
+			position: absolute;
+			top: 6%;
+			left: 0;
+			right: 0;
+			margin: auto;
+			z-index: 20;
+			background-color: #092039;
+			border: 2px solid #d15b6f;
+			border-radius: 20px;
+			width: 80%;
+			padding: 2%;
+			.title{
+				width: 70%;
+				position: relative;
+				left: 15%;
+				margin-bottom: 7%;	
+			}
+			.rules-limit{
+				width: 40%;
+				padding-left: 2%;
+				padding-top: 2%;
+				padding-bottom: 2%;
+				text-align: left;
+				background-color: #d15b6f;
+				color: white;
+				font-size: 1.6rem;
+				margin-bottom: 5px;	
+			}
+			.rules-explain{
+				color: white;
+   				margin-bottom: 10px;	
+			}
+		}
+		.total{
+			
+			top: 11%;
+			@include pocenter_x;
+			width: 50%;	
+			article{
+				position: absolute;
+				bottom: 10%;
+				padding-left: 7%;
+				font-size: 1.5rem;
+				width: 88%;	
+			}
+			span{
+				position: absolute;
+				bottom: 40%;
+				right: 0;
+				width: 50%;
+				text-align: center;
+				font-size: 3rem;
+				color: red;	
+			}
+		}
+		.exp-title{
+			position: absolute;
+			top: 32%;
+			left: 12%;
+			text-shadow: 1px 1px 5px #d56e7f;
+			-webkit-text-stroke-width:2px; 
+			-webkit-text-stroke-color:#d56e7f;
+			color: white;
+			font-size: 2rem;
+		}
+		.explain{
+			@include pocenter_x;
+			top: 38%;
+			width: 68%;
+			color: white;
+			letter-spacing: 2px;
+			border-top: 2px dotted #366e7e;
+			border-bottom: 2px dotted #366e7e;
+			padding: 4%;
+			
+		}
+		.restart{
+			position: absolute;
+			bottom: 15%;
+			left: 15%;
+			@include btnStyle;
+		}
+		.explaination{
+			position: absolute;
+			bottom: 15%;
+			right: 15%;
+			@include btnStyle;
+		}
+	}
+	
+	@at-root
+	#explainPage{
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: -1%;
+		#explainBack{
+			position: absolute;
+    		top: 0;	
+		}
+		.title{
+			position: absolute;
+			top: 12%;
+			left: 12%;
+			    text-shadow: 0px 0px 10px #d56e7f;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: #d56e7f;
+			color: white;
+			font-size: 2rem;
+		}
+		.content{
+			position: relative;
+			left: 0;
+			right: 0;
+			margin: auto;
+			margin-top: 30%;
+			width: 68%;
+			top: 17%;
+			padding: 4%;
+			border-top: 2px dotted #366e7e;
+			border-bottom: 2px dotted #366e7e;
+			background-color: #0a2036;
+			color: white;
+			font-weight: 500;
+			.limit{
+				margin-top: 15px;
+				margin-bottom: 15px;
+				padding: 10px;
+				width: 30%;
+				background-color: #d15b6f;
+				letter-spacing: 1px;
+				text-align: center;
+			}
+			.explainInfo{
+				letter-spacing: 3px;	
+			}
+		}
+		.exp-restart{
+			position: relative;
+			margin-top: 17%;
+			left: 15%;
+			@include btnStyle;
+		}
+		
+		.exp-toFinal{
+			position: relative;
+			margin-top: 17%;
+			margin-left: 22%;
+			@include btnStyle;
+		}
+	}
+}
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>烟草公司生产管理技能300问</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/challenge.css">
+    <link rel="stylesheet" href="" id="mobileCSS">
+    <link rel="stylesheet" href="" id="commonCSS">
+    <script>
+        (function(){
+            if((/Android|iPhone|IOS|iPad/g).test(navigator.userAgent)){
+                document.getElementById("mobileCSS").setAttribute("href", "css/challengeMobile.css");  
+                document.getElementById("commonCSS").setAttribute("href", "css/commonMobile.css");  
+            }
+        })();
+    </script>
+    <script src="js/APIWrapper.js"></script>
+    <script src="js/SCOFunctions.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body onload="javascript:challengeInit();">
+    
+    <section class="container" id="container">
+        
+        
+<!--页面内包括当前平台数据-->
+        <header class="head" id="header">
+            <article id="score"><span class="scoreText">data</span></article>
+            <article id="total"><span class="scoreText">data</span></article>
+            <article id="partTotal"><span class="scoreText">data</span></article>
+        </header>
+        
+        
+<!--表示的是答题和提交界面-->
+        <section class="part" id="ques">
+            <header class="title" id="challengeTitle">第一关</header>
+            <article class="number" id="number">1/5</article>
+            
+            <!-- 倒计时功能 -->
+            <div class="timing" id="timing">1:00</div>
+            <div class="timingHint" id="timingHint" style="display:none">时间快到咯</div>
+            
+            <article class="question" id="question">测试</article>
+            <div class="questionType" id="questionType"></div>
+            <article class="option" id="option1"><img src="pic/chooseA.png" alt="" class="optionNumber"><p class="spanCenter"></p></article>
+            <article class="option" id="option2"><img src="pic/chooseB.png" alt="" class="optionNumber"><p class="spanCenter"></p></article>
+            <article class="option" id="option3"><img src="pic/chooseC.png" alt="" class="optionNumber"><p class="spanCenter"></p></article>
+            <article class="option" id="option4"><img src="pic/chooseD.png" alt="" class="optionNumber"><p class="spanCenter"></p></article>
+            <article class="option" id="option5"><img src="pic/chooseE.png" alt="" class="optionNumber"><p class="spanCenter"></p></article>
+            
+            <!-- 提交按键 -->            
+            <div class="submitBtn" id="submitBtn"></div>
+            
+        </section>
+        <!-- 最后一题点击提交时的弹出框-->
+            <section class="passing" id="passing" style="display:none;">
+               
+                <!-- 表示当前页面开启时候的动画 -->
+                
+               
+                <img src="pic/successful.png" alt="" id="feedDataImage">
+                <img src="pic/successful-lighting.png" alt="" id="animate" class="animate">
+                <!-- 表示的是用户获取的星级 -->
+                <img src="pic/Stars1.png" alt="" class="star" id="star">
+                
+                <article class="rates" id="rates">正确率:data</article>
+                <article class="challTotal" id="challTotal">得分:data</article>
+                
+                <!-- 存储是否正确 -->
+                <section class="quesHint" id="quesHint">
+                    <article class="quesNum" id="quesNum1">1</article>
+                    <article class="quesNum" id="quesNum2">2</article>
+                    <article class="quesNum" id="quesNum3">3</article>
+                    <article class="quesNum" id="quesNum4">4</article>
+                    <article class="quesNum" id="quesNum5">5</article>
+                </section>
+                
+                <article id="rights">data</article>
+                <article id="allRight">data</article>
+                
+                <img src="pic/explain.png" alt="" class="explains" id="explains">
+                <img src="pic/restart.png" alt="" class="restart" id="restart">
+                <img src="pic/nextChallenge.png" alt="" class="nextChallenge" id="nextChallenge">
+                <audio src="soung/right.mp3" id="rightSong"></audio>
+                <audio src="soung/wrong.mp3" id="wrongSong"></audio>
+                
+            </section>
+            
+            <section id="levelAccomplish" style="display:none;"> <!--style="display:none;"-->
+                <img src="pic/accompliash-lighting.png" alt="" class="levelAnimate" id="levelAnimate">
+                <img src="pic/accompliash.png" alt="" class="textContent" id="textContent">
+                <div class="accomplishHintDiv" id="accomplishHintDiv">恭喜你，已经通关了当前关卡</div>
+                <img src="pic/accompliash-button.png" alt="" class="levelButton" id="levelButton">
+            </section>
+        
+        
+<!--表示的是反馈页面的内容-->
+        <section class="part" id="feedback"  style="display:none;">
+            <section class="questionLead" id="questionLead">
+                <article class="quesLead2" id="quesLead1">1</article>
+                <article class="quesLead2" id="quesLead2">2</article>
+                <article class="quesLead2" id="quesLead3">3</article>
+                <article class="quesLead2" id="quesLead4">4</article>
+                <article class="quesLead2" id="quesLead5">5</article>
+            </section>
+            
+            <article class="fquestion" id="fquestion">测试</article>
+            <article class="foption" id="foption1"><img src="pic/chooseA.png" alt="" class="foptionNumber"><p class="spanCenter"></p>
+            <img src="pic/click-choose.png" alt="" class="redRight"></article>
+            <article class="foption" id="foption2"><img src="pic/chooseB.png" alt="" class="foptionNumber"><p class="spanCenter"></p>
+            <img src="pic/click-choose.png" alt="" class="redRight"></article>
+            <article class="foption" id="foption3"><img src="pic/chooseC.png" alt="" class="foptionNumber"><p class="spanCenter"></p>
+            <img src="pic/click-choose.png" alt="" class="redRight"></article>
+            <article class="foption" id="foption4"><img src="pic/chooseD.png" alt="" class="foptionNumber"><p class="spanCenter"></p>
+            <img src="pic/click-choose.png" alt="" class="redRight"></article>
+            <article class="foption" id="foption5"><img src="pic/chooseE.png" alt="" class="foptionNumber"><p class="spanCenter"></p>
+            <img src="pic/click-choose.png" alt="" class="redRight"></article>
+            
+            <section class="explaination">
+                <!-- 所花时长 -->
+                <div class="costTime" id="costTime">用时:data秒</div>
+                
+                <!-- 解释信息 -->
+                <div class="explainContent" id="explainContent">测试使用</div>
+            </section>
+            
+        </section>
+        
+        
+<!--帮助页面点击内容和返回按键-->
+        <footer class="footer" id="footer">
+            <img src="pic/nextChallenge.png" class="fnextChall" id="fnextChall">
+            <img src="pic/restart.png" class="frestart" id="frestart">
+            <div id="returnBtn"></div>
+            <div id="helpBtn"></div>
+        </footer>
+        
+        <audio src="soung/help.wav" id="helpVideo"></audio>
+        <audio src="soung/choose.wav" id="chooseVideo"></audio>
+        <audio src="soung/submit.wav" id="subVideo"></audio>
+    </section>
+    
+</body>
+<script src="js/BackUp/Question.js"></script>
+<script src="js/BackUp/Question2.js"></script>
+<script src="js/BackUp/Question3.js"></script>
+<script src="js/BackUp/PlantForm.js"></script>
+<script src="js/BackUp/Questions.js"></script>
+<script src="js/BackUp/HrefOperation.js"></script>
+<script src="js/BackUp/Events.js"></script>
+<script src="js/BackUp/Controller.js"></script>
+<script src="js/Tool/Preload.js"></script>
+<script src="js/Tool/ChallengeName.js"></script>
+<script src="js/unified.js"></script>
+
+<script src="js/challenge.js"></script>
+</html>

@@ -1,0 +1,85 @@
+.title{
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: rgb(0, 101, 85);
+    background-image: url("../image/title.png");
+    background-size: 102% 90%;
+    font-size: 280%;
+    background-position: 28% 50%;
+    padding: 4% 3% 4% 8%; 
+}
+
+.submitBtn{
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    background-image: url("../image/submitBtn.png");
+    background-size: 100%;
+    width: 30%;
+    height: 8%;
+    line-height: 95px;
+    position: relative;
+    margin-left: 72%;
+    margin-top: 3%;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+
+.question{
+    border: 1px solid #006555;
+    background-color: #006555;
+    font-family: 微软雅黑;
+    font-size: 270%;
+    padding: 1%;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 900;   
+}
+
+.checkClick{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 3px solid #006555;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;   
+}
+
+.chooseContent{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    padding-left: 9%;   
+}
+
+.tips{
+    background-image: url(../image/tip.png);
+    width: 66%;
+    height: 3%;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    left: 0%;
+    top: 5%;   
+}
+
+.choose{
+    padding: 7.5%;
+    padding-left: 4%;
+    font-family: 微软雅黑;
+    font-size: 250%;
+    color: #006555;
+    font-weight: 900;
+    position: relative;
+    border-bottom: 2px dashed #006555;
+    border-radius: 10px;   
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>link</title>
+    <link rel="stylesheet" id="CSSlink">
+    <script>
+        (function(){
+            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+                document.getElementById("CSSlink").href = "linkIOS.css";
+            }
+            else if(/(Android)/i.test(navigator.userAgent)){
+                document.getElementById("CSSlink").href = "linkMobile.css";
+            }
+            else {
+                document.getElementById("CSSlink").href = "link.css";   
+            }
+        })();
+    </script>
+    <script type="text/javascript" language="javascript" src="js/APIWrapper.js"></script>
+    <script type="text/javascript" language="javascript" src="js/SCOFunctions.js"></script>
+    
+</head>
+<body onLoad="loadPage();doContinue('completed');">
+    <!-- bigger模块的开始 -->
+        <div class="bigger" id="bigger">
+        <div class="container" id="container">
+
+            <!-- 连线模块标题填写 -->
+            <h2 >
+                请将左侧的作用，状态与右侧的对应项连接起来，试试看！
+            </h2>
+            
+            <!-- 连线模块隔绝线 -->
+            <!-- 标题内容结束 -->
+
+            <canvas id="drawing" class="drawing"></canvas>
+
+            <!-- 连线左模块 data-number：模块中的可选项目个数 data-linkNum:当前模块中的单个元素可以与另一模块中的多少个元素相关连。 -->
+            <div class="partLeft" id="partLeft" data-number="5" data-linkNum="1">
+                <p class="boxStyle">烟叶加湿回潮作用测试内容</p>
+                <p class="boxStyle">加湿设备作用</p>
+                <p class="boxStyle">加湿预热状态</p>
+                <p class="boxStyle">加湿设备生产状态</p>
+                <p class="boxStyle">加湿设备生产状态</p>
+            </div>
+
+
+            <!-- 连线右边模块  data-number：模块中的可选项目个数 data-linkNum:当前模块中的单个元素可以与另一模块中的多少个元素相关连。 -->
+            <div class="partRight" id="partRight" data-number="5" data-linkNum="1">
+                <p class="boxStyle">便于加工，减少烟叶加工过程中的破碎和损耗</p>
+                <p class="boxStyle">提高烟叶的水分和温度，增加韧性，提高物料的耐加工型，满足后续加工工艺要求测试专用字符串</p>
+                <p class="boxStyle">循环风机在预热阶段高速运行，将热量送入设备中，是设备中的温度达到正常要求</p>
+                <p class="boxStyle">通过控制加水加汽量，达到控制出料水分和温度的目的</p>
+                <p class="boxStyle">通过控制加水加汽量，达到控制出料水分和温度的目的</p>
+            </div>
+            <div class="littleTip" id="tip" hidden="hidden"></div>
+            <div class="submitBtn" id="submitBtn">提交</div>
+
+        </div>
+            <div class="dialogBlack" id="dialogblack" style="background-image:url(./pic/plankt.png);background-size:100% 100%;"  hidden="hidden"></div>
+            <div class="dialog" id="dialog" style="background-image:url(./pic/wrong.png);" hidden="hidden"></div>
+        </div>
+    <!-- bigger模块的结束 -->
+    <audio src="pic/right.wav" class="rightSound" id="rightSound" hidden="hidden"></audio>
+    <audio src="pic/wrong.wav" class="wrongSound" id="wrongSound" hidden="hidden"></audio>
+    <script src = "js/link.js"></script>
+</body>
+</html>

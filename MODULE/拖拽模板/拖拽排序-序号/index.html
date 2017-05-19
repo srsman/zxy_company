@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>trip-up-down</title>
+    <link rel="stylesheet" id="CSSlink">
+    <script type="text/javascript" language="javascript" src="js/APIWrapper.js"></script>
+    <script type="text/javascript" language="javascript" src="js/SCOFunctions.js"></script>
+    <script>
+        (function(){
+            if(/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)){
+                document.getElementById("CSSlink").href = "tripmobile.css";   
+            }
+            else {
+                document.getElementById("CSSlink").href = "trip.css";  
+            }
+        })();
+    </script>
+</head>
+
+<body onLoad="loadPage();doContinue('completed');">
+    <div class="bigger" id="bigger">
+        
+        <div class="container" id="container">
+            <div class="headTitle" id="headTitle">
+                <img src="./pic/title.png" alt="" class="titleImage">
+                <!--            标题内容填写在这里-->
+                
+                <h2 class="title" id="title">输送带档边的更换的正确步骤是怎么样的？想一想，并将下列各项正确排序。</h2>
+            
+            </div>
+            
+            <hr class="titleHr">
+            <div id="showout">
+            <div class="tripContent" id="1">
+                <span class="number">1</span>
+                <p class="content">依次拆卸挡边的紧固螺钉和压条，取下档边，压条要按顺序做记号</p>
+            </div>
+            <div class="tripContent" id="2">
+                <span class="number">2</span>
+                <p class="content">裁减同宽度的档边材料</p>
+            </div>
+            <div class="tripContent" id="3">
+                <span class="number">3</span>
+                <p class="content">将挡边材料拉紧，并从旧的当边上复制安装孔</p>
+            </div>
+            <div class="tripContent" id="4">
+                <span class="number">4</span>
+                <p class="content">将新挡边打孔，并裁剪使之与旧档边相同</p>
+            </div>
+            <div class="tripContent" id="5">
+                <span class="number">5</span>
+                <p class="content">将新档边放到带式传送机的边板上，并固定其中一端，将另一端拉紧，逐步按照顺序降压条状上并紧固螺钉</p>
+            </div>
+            <div class="tripContent" id="6">
+                <span class="number">6</span>
+                <p class="content">调整边板的高度，使档边与皮带适当接触，档边与皮带压的越紧，越容易磨损皮带，压得太松，使用一段时间后又需要调整边板高度</p>
+            </div>
+            <div class="tripContent" id="7">
+                <span class="number">7</span>
+                <p class="content">调换档边后。检查设备上是否有多余的螺钉或是工具</p>
+            </div>
+            </div>
+            <div class="tip" id="tip"></div>
+            <div class="submitBtn" id="submitBtn">
+                提交
+            </div>
+        </div>
+    </div>
+    <dic class="dialogblank" id="dialogBlank"></dic>
+    <div class="dialog" id="dialog" ></div>
+            
+    <audio src="pic/right.wav" id="rightVideo" hidden="hidden"></audio>
+    <audio src="pic/wrong.wav" id="wrongVideo" hidden="hidden"></audio>
+</body>
+    <script src="trip.js"></script>
+</html>

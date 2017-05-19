@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>trip-up-down</title>
+    <link rel="stylesheet" id="CSSlink">
+    <script type="text/javascript" language="javascript" src="js/APIWrapper.js"></script>
+    <script type="text/javascript" language="javascript" src="js/SCOFunctions.js"></script>
+    <script>
+        (function(){
+            if(/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)){
+                document.getElementById("CSSlink").href = "tripmobile.css";   
+            }
+            else {
+                document.getElementById("CSSlink").href = "trip.css";  
+            }
+        })();
+    </script>
+</head>
+
+<body onLoad="loadPage();doContinue('completed');">
+    <div class="bigger" id="bigger">
+        
+        <div class="container" id="container">
+            <div class="headTitle" id="headTitle">
+                <img src="./pic/title.png" alt="" class="titleImage">
+                <!--            标题内容填写在这里-->
+                
+                <h2 class="title" id="title">请将下列选项放入到流程图中的对应位置，试试看！</h2>
+            
+            </div>
+            
+            <hr class="titleHr">
+            <div id="showout">
+            
+                <span class="number">1</span>
+                <div class="content" id="1">原料储罐</div>
+                <img src="pic/stepImage.png" alt="" class="stepImage" id="image1">
+
+                <span class="number">2</span>
+                <div class="content" id="2">调制罐</div>
+                <img src="pic/stepImage.png" alt="" class="stepImage" id="image2">
+
+                <span class="number">3</span>
+                <div class="content" id="3">计量</div>
+                <img src="pic/stepImage.png" alt="" class="stepImage" id="image3">
+
+                <span class="number">4</span>
+                <div class="content" id="4">成品储罐</div>
+                <img src="pic/stepImage.png" alt="" class="stepImage" id="image4" style="display:none">
+            
+            </div>
+            <hr class="floorHr">
+            <div class="tip" id="tip"></div>
+            <div class="submitBtn" id="submitBtn">
+                提交
+            </div>
+        </div>
+        <dic class="dialogblank" id="dialogBlank"></dic>
+        <div class="dialog" id="dialog" ></div>
+    </div>
+            
+    <audio src="pic/right.wav" id="rightVideo" hidden="hidden"></audio>
+    <audio src="pic/wrong.wav" id="wrongVideo" hidden="hidden"></audio>
+</body>
+    <script src="trip.js"></script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拖拽</title>
+    <link rel="stylesheet" id="CSSlink">
+    <script>
+        (function(){
+            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+                document.getElementById("CSSlink").href = "indexIOS.css";
+            }
+            else if(/(Android)/i.test(navigator.userAgent)){
+                document.getElementById("CSSlink").href = "indexMobile.css";
+            }
+            else {
+                document.getElementById("CSSlink").href = "index.css";   
+            }
+        })();
+    </script>
+    <link rel="prefetch" href="pic/wrong.png">
+    <link rel="prefetch" href="pic/plankt.png">
+    <script type="text/javascript" language="javascript" src="js/APIWrapper.js"></script>
+    <script type="text/javascript" language="javascript" src="js/SCOFunctions.js"></script>
+</head>
+<body onLoad="loadPage();doContinue('completed');">
+    <div class="bigger" id="bigger">
+        <div class="container" id="container">
+
+           <!--           标题的修改在这里-->
+            <h2 id="title">请将你认为日保养、周保养相对应的内容拖拽到正确的位置上。试试看！</h2>
+
+           
+           <!--        data-count表示分为几类，data-limit表示的是每一类种可以放几个元素。更具需求修改这两个参数的值-->
+            <div class="type" id="type" data-count="4" data-limit="1">
+                <section class="picture" id="picture"><image class="imageStyle" src="pic/picture.png"></image></section>
+                <div class="typeBox" id="typeBox1"></div>
+                <div class="typeBox" id="typeBox2"></div>
+                <div class="typeBox" id="typeBox3"></div>
+                <div class="typeBox" id="typeBox4"></div>
+            </div>
+    
+            <hr>
+           <!--           data-quantity的值为div中P标签的个数总和-->
+            <div class="specific" id="specific" data-quantity="4">
+                <div class="innerSpec" id="innerSpec">
+                <p class="specification" id="specification1">仅仅只是为了测试三十1</p
+                ><p class="specification" id="specification2">仅仅只是为了测试三十字符会让页2</p
+                ><p class="specification" id="specification3">仅仅只是为了测试三十字符会让页面显示何样3</p
+                ><p class="specification" id="specification4">仅仅只是为了测试三十字符会让页面显示何样，不要在意我就好了哦4</p
+                ></div>
+            </div>
+            <div class="tip" id="tip"></div>
+            <div class="submitBtn" id="submitBtn">提交</div>
+            <div class="dialogBlank" id="dialogBlank"></div>
+            <div class="dialog" id="dialog"></div>
+        </div>
+        
+    </div>
+    
+    <audio src="pic/right.wav" class="rightSound" id="rightSound" hidden="hidden"></audio>
+    <audio src="pic/wrong.wav" class="wrongSound" id="wrongSound" hidden="hidden"></audio>
+    
+</body>
+    <script src="js/index.js"></script>
+</html>

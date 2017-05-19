@@ -1,0 +1,35 @@
+.unitTotal{
+    font-size: 2rem;
+    left: 50%;
+}
+.unitTotal2{
+    font-size: 2rem;
+}
+
+.challDiv{
+    border: 0px solid RGBA(0,0,0,0);   
+}
+
+.challenge{
+    height: 75px;
+    display: block;
+    padding-left: 2px;   
+}
+
+.challStar1{
+    height: 16px;   
+}
+.challStar2{
+    height: 16px;   
+}
+.challStar3{
+    height: 16px;   
+}
+
+.challengeTitle{
+    width: 100%;
+    overflow: hidden;
+    height: 24px;
+    margin: auto; 
+    font-size: 0.8rem;
+}

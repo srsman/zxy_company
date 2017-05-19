@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+.container{
+    background-image: url(../pic/background.jpg);
+}
+
+.levelDiv{
+    width: 60%;
+    height: 25%;
+    background-image: url(../pic/home-tech.png);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10%;
+    margin: auto;  
+    cursor: pointer;
+}
+
+#business{
+    width: 70%;   
+    top: 10%;
+    background-image: url(../pic/home-business.png);
+}
+
+#manage{
+    width: 70%;   
+    top: 10%;
+    background-image: url(../pic/home-mange.png);
+}
+
+#levelAccomplish{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    background-image: url(../pic/barrier-chall.png);
+    top: 0;
+    left: 0;   
+}
+
+#levelAnimate{
+    width: 88%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    transform-origin: 50% 50%;
+    animation: showing 1s 0s ease;
+}
+
+#textContent{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+	bottom: 0;
+    margin: auto;   
+}
+
+.middle-content{
+	position: absolute;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 35%;	
+}
+
+#star-left{
+	display: inline-block;
+    width: 7%;	
+}
+
+#star-right{
+	width: 7%;
+    position: absolute;
+    right: 0;
+}
+
+#com-text{
+    display: inline-block;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 900;
+    color: #5E8133;
+}
+
+.com-text{
+	font-size: 1.7rem;	
+}
+
+.fadeIn{
+	transition: all ease-out 1s 0s;
+	-moz-transition: all ease-out 1s 0s; /* Firefox 4 */
+	-webkit-transition: all ease-out 1s 0s; /* Safari 和 Chrome */
+	-o-transition: all ease-out 1s 0s; /* Opera */
+	opacity: 0;
+}
+
+#levelButton{
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;   
+}
+
+.levelHint{
+    width: 50%;
+    height: 16%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 67%;
+    font-family: 微软雅黑;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 0px 0px 3px #eee; 
+}
+
+#resultBtn{
+    width: 10%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    bottom: 0;
+    background-image: url(../pic/list-btn.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: auto; 
+    cursor: pointer;	
+}
+
+#userList{
+	position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+#userListBack{
+	position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.listContent{
+	position: relative;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 53%;
+    height: 45%;
+    overflow-y: auto;
+    overflow-x: hidden;	
+}
+
+.listOption{
+	width: 85%;
+    height: 14.5%;
+    position: relative;
+    border: 2px solid #7bbd66;
+    border-radius: 10px;
+    padding-left: 14%;	
+	margin-bottom: 1%;
+}
+
+.option-background{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #7bbd66;
+    opacity: 0.2;	
+}
+
+.list-number{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-left: 1%;
+    height: 73%;
+    width: 9%;
+    background-color: #7fae2a;
+    border: 4px solid #394c10;
+    border-radius: 300px;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2.2rem;
+    font-family: 黑体;
+    color: white;	
+}
+
+.userName{
+	position: absolute;
+    top: 1%;
+    font-size: 1.4rem;
+	line-height: 1.4rem;
+    font-family: 微软雅黑;
+    font-weight: bolder;	
+}
+
+.companyName{
+	position: absolute;
+    bottom: 1%;
+    font-family: 微软雅黑;
+    font-size: 1.1rem;
+	line-height: 1.1rem;
+    width: 50%;
+    height: 40%;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.option-counting{
+	position: absolute;
+    width: 29%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 4%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.option-star{
+	width: 16%;
+}
+
+.option-count-number{
+	font-family: 黑体;
+    font-weight: bolder;
+	font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding-left: 1px;
+}
+
+.noData{
+	position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 1.3rem;
+    font-weight: bolder;	
+}
+.marquee{
+	position: absolute;
+	top: 0;
+}

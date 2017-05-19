@@ -1,0 +1,121 @@
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/mobile.scss */
+html {
+  font-size: 180%;
+}
+
+/* line 10, ../sass/mobile.scss */
+#quesPage {
+  height: 100%;
+}
+/* line 12, ../sass/mobile.scss */
+#quesPage img {
+  height: 100%;
+}
+/* line 15, ../sass/mobile.scss */
+#quesPage .option {
+  margin-top: 50px;
+}
+/* line 18, ../sass/mobile.scss */
+#quesPage .beChoosed {
+  margin-top: 50px;
+}
+/* line 21, ../sass/mobile.scss */
+#quesPage .option::before {
+  width: 20px;
+  height: 20px;
+  border-width: 10px;
+}
+/* line 26, ../sass/mobile.scss */
+#quesPage .beChoosed::before {
+  width: 20px;
+  height: 20px;
+  border-width: 10px;
+}
+/* line 33, ../sass/mobile.scss */
+#finalPage {
+  height: 100%;
+}
+/* line 35, ../sass/mobile.scss */
+#finalPage img {
+  height: 100%;
+}
+/* line 38, ../sass/mobile.scss */
+#finalPage .explain {
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  font-size: 1.2rem;
+  top: 36%;
+}
+/* line 47, ../sass/mobile.scss */
+#explainPage .content {
+  font-size: 1.2rem;
+}
+/* line 49, ../sass/mobile.scss */
+#explainPage .content .limit {
+  margin-top: 40px;
+}

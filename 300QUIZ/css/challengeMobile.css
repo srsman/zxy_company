@@ -1,0 +1,125 @@
+.quesLead{
+    border: 3px solid RGBA(0,0,0,0);
+    font-size: 2rem;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.quesLead2{
+    border: 3px solid RGBA(0,0,0,0);
+    font-size: 2rem;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.fquestion{
+    font-size: 2rem;   
+}
+
+.foption{
+    font-size: 2rem;   
+}
+
+#costTime{
+    font-size: 2rem;   
+}
+
+#explainContent{
+    font-size: 2rem;  
+}
+
+.title{
+    font-size: 4rem;   
+}
+
+.timing{
+    font-size: 2rem;
+}
+
+.number{
+    font-size: 2rem;   
+}
+
+.question{
+    font-size: 2.1rem;   
+}
+
+.option{
+    font-size: 2rem;   
+}
+
+.rates{
+    font-size: 2rem;   
+}
+
+.challScore{
+    font-size: 2rem;   
+}
+
+.quesNum{
+    border: 3px solid RGBA(0,0,0,0);
+    font-size: 2rem;
+    padding-left: 11px;
+    padding-right: 11px;   
+}
+
+.quesNum2{
+    border: 3px solid RGBA(0,0,0,0);
+    font-size: 2rem;
+    padding-left: 11px;
+    padding-right: 11px;   
+}
+
+#rights{
+    font-size: 2rem; 
+    top: 65.5%;
+}
+
+#allRight{
+    font-size: 2rem; 
+    top: 68.5%;
+}
+
+#levelButton{
+    top: 56%;
+}
+
+#levelAnimate{
+    top: 12%;   
+}
+
+#feedDataImage{
+    height: 63%;   
+}
+
+.animate{
+    width: 80%;   
+}
+
+.animate2{
+    width: 80%;   
+}
+
+.explains{
+    top: 78%;   
+}
+
+.restart{
+    top: 78%;   
+}
+
+.nextChallenge{
+    top: 78%;   
+}
+
+.spanCenter{
+    font-size: 2rem;   
+}
+
+.timingHint{  
+    font-size: 1.8rem;   
+}
+
+.challTotal{
+     font-size: 2rem;   
+}

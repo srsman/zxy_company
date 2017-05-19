@@ -1,0 +1,303 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+     
+    width: 98%;
+    height: 95%;
+    
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    body{
+        width: 100%;
+        height: 98%;   
+    }
+}
+*/
+
+.bigger{
+    
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 1%;
+    
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .bigger{
+         padding: 0;   
+    }
+}
+*/
+
+.container{
+    width: 100%;
+    height: 99%;
+    position: relative;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+     .container{
+         height: 100%;    
+    }
+}
+*/
+
+.headTitle{
+    padding: 15px;
+    width: 90%;
+    margin: auto;   
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .headTitle{
+        padding: 3%;
+        width: 95%;
+        margin: auto;
+    }
+}
+*/
+
+.titleImage{
+    width: 50px;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .titleImage{
+        width: 160px; 
+    }
+}
+*/
+
+.title{
+    position: relative;
+    font-family: 微软雅黑;
+    margin-top: -48px;
+    margin-left: 50px;  
+    color: #006555;
+    font-size: 25px;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .title{
+        margin-top: -120px;
+        margin-left: 148px;
+        font-size: 280%;  
+    }
+}
+*/
+
+.titleHr{
+    width: 97%;
+    margin: auto;
+    background-color: #006555;
+    border: none;
+    height: 2px;
+}
+
+.floorHr{
+    width: 97%;
+    margin: auto;
+    background-color: #006555;
+    border: none;
+    height: 2px;  
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .titleHr{
+        margin-bottom: 4%;
+    }
+}
+*/
+
+#showout{
+    width: 40%;
+    margin-left: 30%;
+    border-left: 2px #006555 solid;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.tripContent{
+    width: 100%;
+    margin: auto;
+    font-size: 100%;
+    margin-top: 11px;
+    word-break: break-all;
+    font-family: 微软雅黑;
+    padding-left: 12px;
+    background-color: white;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .tripContent{
+        width: 86%;
+        margin-bottom: 20px;
+        padding: 2%;
+        font-size: 240%;   
+    }
+}
+*/
+
+.number{
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-family: 微软雅黑;
+    background-color: #006555;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-left: -13px;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .number{
+        border-radius: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+*/
+
+.content{
+    position: relative;
+    width: 70%;
+    border: 2px #006555 solid;
+    margin-top: -5.9%;
+    border-radius: 10px;
+    margin-left: 14%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    background-color: #fff;
+    font-family: 微软雅黑;
+}
+
+.stepImage{
+    width: 10%;
+    position: relative;
+    margin-left: 72%;
+    margin-bottom: 1%;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .content{
+        margin-top: -5%;
+        margin-left: 8%;  
+    }
+}
+*/
+
+.tip{
+    background-image: url(./pic/tip.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 250px;
+    height: 40px;
+    position: relative;
+    margin-left: 33%;
+    margin-top: 15px;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .tip{
+        width: 579px;
+        height: 100px;
+        margin-left: 4%;
+        margin-top: 38px;   
+    }
+}
+*/
+
+.submitBtn{
+    position: relative;
+    width: 160px;
+    height: 50px;
+    background-image: url(./pic/submitBtn.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: white;
+    padding-top: 30px;
+    margin-left: 58%;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .submitBtn{
+        width: 394px;
+        height: 120px;
+        padding-top: 75px;
+        margin-left: 58%;
+        margin-top: -30px;
+        font-size: 270%; 
+    }
+}
+*/
+
+.dialogblank{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #000;
+    opacity: 0.3;
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .dialogblank{
+         position:fixed;   
+    }
+}
+*/
+
+.dialog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./pic/wrong2.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+/*
+@media screen and (min-width:700px) and (min-height:800px){
+    .dialog{
+        position: fixed;
+        background-image: url(./pic/wrong.png);     
+    }
+}*/

@@ -1,0 +1,49 @@
+.levelHint{
+    font-size: 210%;
+}
+
+.listContent{
+	margin-top: 60%;	
+}
+
+.noData{
+	font-size: 3.3rem;
+}
+
+.listOption{
+	border-radius: 30px;
+}
+
+.list-number{
+	font-size: 3rem;
+	line-height: 4.5rem;
+}
+
+.userName{
+	font-size: 2.7rem;
+    top: 17%;
+}
+
+.companyName{
+	font-size: 2rem;
+    bottom: 1%;
+}
+
+.option-counting{
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.marquee{
+	text-align: center;
+    height: 100%;
+    line-height: 2rem;	
+}
+
+.option-counting img{
+	width: 16%;	
+}
+
+.option-count-number{
+	font-size: 2.3rem;	
+}

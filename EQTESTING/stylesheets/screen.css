@@ -1,0 +1,616 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@mixmin pocenter_y {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 71, ../sass/screen.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-height: 772px) {
+  /* line 71, ../sass/screen.scss */
+  html {
+    font-size: 95%;
+  }
+}
+@media screen and (max-height: 732px) {
+  /* line 71, ../sass/screen.scss */
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-height: 709px) {
+  /* line 71, ../sass/screen.scss */
+  html {
+    font-size: 85%;
+  }
+}
+
+/* line 77, ../sass/screen.scss */
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* line 83, ../sass/screen.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 88, ../sass/screen.scss */
+.app {
+  font-family: 微软雅黑;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  outline: none;
+}
+/* line 93, ../sass/screen.scss */
+#loadPage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 97, ../sass/screen.scss */
+#loadPage img {
+  height: 100%;
+}
+/* line 100, ../sass/screen.scss */
+#loadPage .load {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 3%;
+  top: 70%;
+  width: 60%;
+  background-color: #c9c9c9;
+  border-radius: 100px;
+}
+/* line 108, ../sass/screen.scss */
+#loadPage .load .schedule {
+  height: 100%;
+  background-color: #5bd3ff;
+  border-radius: 100px;
+}
+/* line 114, ../sass/screen.scss */
+#loadPage .loaded {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 77%;
+  width: 10%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5bd3ff;
+}
+/* line 125, ../sass/screen.scss */
+#homePage {
+  width: 100%;
+  margin-bottom: -1%;
+}
+/* line 128, ../sass/screen.scss */
+#homePage #homeBack {
+  position: absolute;
+  top: 0;
+}
+/* line 132, ../sass/screen.scss */
+#homePage .text {
+  color: white;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  margin-top: 130%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+/* line 141, ../sass/screen.scss */
+#homePage .text p {
+  text-indent: 2rem;
+}
+@media screen and (max-height: 661px) {
+  /* line 132, ../sass/screen.scss */
+  #homePage .text {
+    top: 500px;
+  }
+}
+/* line 148, ../sass/screen.scss */
+#homePage .startBtn {
+  border: 2px solid #cdfe9d;
+  font-size: 1.5rem;
+  font-family: 微软雅黑;
+  color: #cdfe9d;
+  background-color: #010818;
+  padding: 10px;
+  border-radius: 200px;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: 2px;
+  outline: none;
+  position: relative;
+  margin-top: 15%;
+  left: 28%;
+}
+@media screen and (max-height: 661px) {
+  /* line 148, ../sass/screen.scss */
+  #homePage .startBtn {
+    top: 1050px;
+  }
+}
+/* line 161, ../sass/screen.scss */
+#quesPage {
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+}
+/* line 166, ../sass/screen.scss */
+#quesPage img {
+  height: 100%;
+}
+/* line 169, ../sass/screen.scss */
+#quesPage .ques-info {
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  width: 80%;
+}
+/* line 174, ../sass/screen.scss */
+#quesPage .ques-info .number {
+  width: 22%;
+  position: relative;
+  display: inline-block;
+}
+/* line 178, ../sass/screen.scss */
+#quesPage .ques-info .number p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 70%;
+  width: 75%;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-shadow: 0px 0px 2px #000;
+}
+/* line 188, ../sass/screen.scss */
+#quesPage .ques-info .type {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1%;
+  position: absolute;
+  top: 40%;
+  left: 24%;
+  color: #6fdedb;
+  letter-spacing: 3px;
+}
+/* line 199, ../sass/screen.scss */
+#quesPage .ques-content {
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 80%;
+}
+/* line 207, ../sass/screen.scss */
+#quesPage .ques-content .question {
+  width: 100%;
+  line-height: 2rem;
+}
+/* line 211, ../sass/screen.scss */
+#quesPage .ques-content .option {
+  margin-top: 20px;
+  padding-left: 12%;
+  position: relative;
+}
+/* line 216, ../sass/screen.scss */
+#quesPage .ques-content .option::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #fff;
+  background-color: #434343;
+  border-radius: 100px;
+  margin-right: 3px;
+  left: 0;
+  bottom: 0;
+}
+/* line 229, ../sass/screen.scss */
+#quesPage .ques-content .beChoosed {
+  margin-top: 20px;
+  padding-left: 12%;
+  position: relative;
+}
+/* line 234, ../sass/screen.scss */
+#quesPage .ques-content .beChoosed::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #000b19;
+  background-color: #d5ffa4;
+  box-shadow: 0px 0px 3px #d5ffa4;
+  border-radius: 100px;
+  margin-right: 3px;
+  left: 0;
+  bottom: 0;
+}
+/* line 249, ../sass/screen.scss */
+#quesPage .next-ques {
+  position: absolute;
+  bottom: 15%;
+  right: 20%;
+  border: 2px solid #cdfe9d;
+  font-size: 1.5rem;
+  font-family: 微软雅黑;
+  color: #cdfe9d;
+  background-color: #010818;
+  padding: 10px;
+  border-radius: 200px;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: 2px;
+  outline: none;
+}
+/* line 255, ../sass/screen.scss */
+#quesPage .pre-ques {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  border: 2px solid #cdfe9d;
+  font-size: 1.5rem;
+  font-family: 微软雅黑;
+  color: #cdfe9d;
+  background-color: #010818;
+  padding: 10px;
+  border-radius: 200px;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: 2px;
+  outline: none;
+}
+/* line 264, ../sass/screen.scss */
+#finalPage {
+  width: 100%;
+  height: 100%;
+  mmargin-bottom: -1%;
+  overflow: hidden;
+}
+/* line 269, ../sass/screen.scss */
+#finalPage img {
+  height: 100%;
+}
+/* line 272, ../sass/screen.scss */
+#finalPage .rulesBtn {
+  width: 27%;
+  border: 1px solid #cdfe9d;
+  border-radius: 10px;
+  position: absolute;
+  top: 7%;
+  left: 9%;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: #010818;
+  font-family: 微软雅黑;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  outline: none;
+}
+/* line 288, ../sass/screen.scss */
+#finalPage .rulesBtn .rightConer {
+  display: inline-block;
+  border: 1px solid #CDFE9D;
+  padding-left: 4%;
+  padding-right: 3%;
+  border-radius: 100px;
+}
+/* line 296, ../sass/screen.scss */
+#finalPage .rulesContent {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  background-color: #092039;
+  border: 2px solid #d15b6f;
+  border-radius: 20px;
+  width: 80%;
+  padding: 2%;
+}
+/* line 308, ../sass/screen.scss */
+#finalPage .rulesContent .title {
+  width: 70%;
+  position: relative;
+  left: 15%;
+  margin-bottom: 7%;
+}
+/* line 314, ../sass/screen.scss */
+#finalPage .rulesContent .rules-limit {
+  width: 40%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: left;
+  background-color: #d15b6f;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+/* line 325, ../sass/screen.scss */
+#finalPage .rulesContent .rules-explain {
+  color: white;
+  margin-bottom: 10px;
+}
+/* line 330, ../sass/screen.scss */
+#finalPage .total {
+  top: 11%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+}
+/* line 335, ../sass/screen.scss */
+#finalPage .total article {
+  position: absolute;
+  bottom: 10%;
+  padding-left: 7%;
+  font-size: 1.5rem;
+  width: 88%;
+}
+/* line 342, ../sass/screen.scss */
+#finalPage .total span {
+  position: absolute;
+  bottom: 40%;
+  right: 0;
+  width: 50%;
+  text-align: center;
+  font-size: 3rem;
+  color: red;
+}
+/* line 352, ../sass/screen.scss */
+#finalPage .exp-title {
+  position: absolute;
+  top: 32%;
+  left: 12%;
+  text-shadow: 1px 1px 5px #d56e7f;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #d56e7f;
+  color: white;
+  font-size: 2rem;
+}
+/* line 362, ../sass/screen.scss */
+#finalPage .explain {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 38%;
+  width: 68%;
+  color: white;
+  letter-spacing: 2px;
+  border-top: 2px dotted #366e7e;
+  border-bottom: 2px dotted #366e7e;
+  padding: 4%;
+}
+/* line 373, ../sass/screen.scss */
+#finalPage .restart {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  border: 2px solid #cdfe9d;
+  font-size: 1.5rem;
+  font-family: 微软雅黑;
+  color: #cdfe9d;
+  background-color: #010818;
+  padding: 10px;
+  border-radius: 200px;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: 2px;
+  outline: none;
+}
+/* line 379, ../sass/screen.scss */
+#finalPage .explaination {
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  border: 2px solid #cdfe9d;
+  font-size: 1.5rem;
+  font-family: 微软雅黑;
+  color: #cdfe9d;
+  background-color: #010818;
+  padding: 10px;
+  border-radius: 200px;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: 2px;
+  outline: none;
+}
+/* line 388, ../sass/screen.scss */
+#explainPage {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -1%;
+}
+/* line 392, ../sass/screen.scss */
+#explainPage #explainBack {
+  position: absolute;
+  top: 0;
+}
+/* line 396, ../sass/screen.scss */
+#explainPage .title {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  text-shadow: 0px 0px 10px #d56e7f;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #d56e7f;
+  color: white;
+  font-size: 2rem;
+}
+/* line 406, ../sass/screen.scss */
+#explainPage .content {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 30%;
+  width: 68%;
+  top: 17%;
+  padding: 4%;
+  border-top: 2px dotted #366e7e;
+  border-bottom: 2px dotted #366e7e;
+  background-color: #0a2036;
+  color: white;
+  font-weight: 500;
+}
+/* line 420, ../sass/screen.scss */
+#explainPage .content .limit {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 30%;
+  background-color: #d15b6f;
+  letter-spacing: 1px;
+  text-align: center;
+}
+/* line 429, ../sass/screen.scss */
+#explainPage .content .explainInfo {
+  letter-spacing: 3px;
+}
+/* line 433, ../sass/screen.scss */
+#explainPage .exp-restart {
+  position: relative;
+  margin-top: 17%;
+  left: 15%;
+  border: 2px solid #cdfe9d;
+  font-size: 1.5rem;
+  font-family: 微软雅黑;
+  color: #cdfe9d;
+  background-color: #010818;
+  padding: 10px;
+  border-radius: 200px;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: 2px;
+  outline: none;
+}
+/* line 440, ../sass/screen.scss */
+#explainPage .exp-toFinal {
+  position: relative;
+  margin-top: 17%;
+  margin-left: 22%;
+  border: 2px solid #cdfe9d;
+  font-size: 1.5rem;
+  font-family: 微软雅黑;
+  color: #cdfe9d;
+  background-color: #010818;
+  padding: 10px;
+  border-radius: 200px;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: 2px;
+  outline: none;
+}

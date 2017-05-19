@@ -1,0 +1,44 @@
+.container{
+    background-image: url(../pic/index.jpg);
+}
+
+.loadingBorder{
+    background-color: WHITE;
+    width: 65.5%;
+    height: 3.5%;
+    position: relative;
+    top: 71%;
+    margin: 0 auto;
+    border-radius: 100px;   
+}
+
+.loading{
+    width: 96%;
+    height: 60%;
+    background: -webkit-linear-gradient(bottom,#533611, #755316);
+    background: -o-linear-gradient(bottom,#533611, #755316);
+    background: -moz-linear-gradient(bottom,#533611, #755316);
+    background: linear-gradient(to bottom,#533611, #755316);
+    border-radius: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #5b3911; 
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100%;
+    border-radius: 100px; 
+    transition: 4.2s;
+    background: -webkit-linear-gradient(left,#feed01, #ffa200);
+    background: -o-linear-gradient(left,#feed01, #ffa200);
+    background: -moz-linear-gradient(left,#feed01, #ffa200);
+    background: linear-gradient(to left,#feed01, #ffa200);
+}

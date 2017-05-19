@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>烟草公司生产管理技能300问</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="" id="mobileCSS">
+    <link rel="stylesheet" href="" id="commonCSS">
+    <script>
+        (function(){
+            if((/Android|iPhone|IOS|iPad/g).test(navigator.userAgent)){
+                document.getElementById("mobileCSS").setAttribute("href", "css/indexMobile.css");  
+                document.getElementById("commonCSS").setAttribute("href", "css/commonMobile.css");  
+            }
+        })();
+    </script>
+    <script src="js/APIWrapper.js"></script>
+    <script src="js/SCOFunctions.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/initializa.js"></script>
+</head>
+<body onload="loading();">
+   
+<!--   当前的额内容包裹在这一内容中且PC段内容见会以640*1008的比例进行缩放-->
+    <div class="container" id="container">
+        
+<!--   进度条内容-->
+        <div class="loadingBorder">
+            <div class="loading" id="loading">
+                <div class="content" id="content"></div>
+            </div>
+        </div>
+        <audio src="soung/index.wav" id="myaudio"></audio>
+    </div>
+</body>
+<script src="js/BackUp/PlantForm.js"></script>
+<script src="js/BackUp/Questions.js"></script>
+<script src="js/BackUp/HrefOperation.js"></script>
+<script src="js/BackUp/Events.js"></script>
+<script src="js/BackUp/Controller.js"></script>
+<script src="js/Tool/Preload.js"></script>
+<script src="js/unified.js"></script>
+
+<script src="js/index.js"></script>
+</html>

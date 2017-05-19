@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 95%;
+    height: 90%;
+    padding: 2%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.title{
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: rgb(0, 101, 85);
+    background-image: url("../image/title.png");
+    background-size: 102% 102%;
+    font-size: 180%;
+    background-position: 28% 50%;
+    padding: 3% 3% 3% 8%;   
+}
+
+.imageStyle{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#imageStyles{
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;   
+}
+
+.content{
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px #ddd;
+    padding: 2%;
+    width: 94%;
+    margin: 0 auto;   
+}
+
+.question{
+    border: 1px solid #006555;
+    background-color: #006555;
+    font-family: 微软雅黑;
+    font-size: 160%;
+    padding: 1%;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 900;   
+}
+
+.choose{
+    padding: 4.5%;
+    font-family: 微软雅黑;
+    font-size: 130%;
+    color: #006555;
+    font-weight: 900;
+    position: relative;
+    border-bottom: 2px dashed #006555;
+    border-radius: 10px;   
+}
+
+.checkClick{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 3px solid #006555;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;  
+    background-position: center;
+    background-size: 100%;
+}
+
+.chooseContent{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 35px;
+    padding-left: 60px;
+    font-size: 25px;   
+}
+
+.submitBtn{
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    font-size: 140%;
+    color: rgb(255, 255, 255);
+    background-image: url("../image/submitBtn.png");
+    background-size: 100%;
+    width: 230px;
+    height: 100px;
+    line-height: 90px;
+    position: relative;
+    margin-left: 82%;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 40px;
+}
+
+.tips{
+    background-image: url(../image/tip.png);
+    width: 25%;
+    height: 35px;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    left: 60%;
+    top: 5%;   
+}
+
+.mooc{
+    width: 100%;
+    position: absolute;
+    background-color: #555;
+    opacity: 0.8;
+    height: 100%;
+}
+
+.rightBack{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.wrongBack{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+ul,li,ol{list-style:none;}
+/*底部*/
+.nav{ width:100%;height:40px;margin:0 auto; position:fixed;left:0; bottom:0; background:#333;}
+.nav li{ width:50%; height:40px; float:left; position:relative;}
+.nav a{ width:100%; height:40px; display:block; position:relative;}
+.nav a span{ width:100%; height:40px; line-height:40px; text-align:center; position:absolute; left:0; bottom:0px; cursor:pointer;color:#fff;text-shadow:#333 1px 1px;}
+.nav a.curr{ background-color:#B60005;}
+.nav a.curr span{text-shadow:#910003 1px 1px;}

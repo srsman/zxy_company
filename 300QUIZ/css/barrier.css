@@ -1,0 +1,265 @@
+#backgroundImage{
+    width: 100%;
+    height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+#mainContent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;  
+	z-index: 2;
+}
+
+.unitContent{
+    width: 45%;
+    height: 16%;
+    position: absolute;
+    transition: 1s;
+    animation: opShow 0.5s 0.5s ease;
+    -webkit-animation: opShow 0.5s 0.5s ease;
+    -maz-animation: opShow 0.5s 0.5s ease;
+    -o-animation: opShow 0.5s 0.5s ease;
+    cursor: pointer;
+}
+
+#unitContent1_1{
+    top: 69%;
+    left: 51%;
+}
+
+#unitContent1_2{
+    top: 54%;
+    left: 5%;
+}
+
+#unitContent1_3{
+    top: 36%;
+    left: 51%;
+}
+
+#unitContent1_4{
+    top: 22%;
+    left: 5%;
+}
+
+#unitContent1_5{
+    top: 69%;
+    left: 51%;
+}
+
+#unitContent1_6{
+    top: 54%;
+    left: 5%;
+}
+
+#unitContent1_7{
+    top: 36%;
+    left: 51%;
+}
+
+#unitContent1_8{
+    top: 22%;
+    left: 5%;
+}
+
+#unitContent2_1{
+    top: 60%;
+    left: 51%;   
+}
+
+#unitContent2_2{
+    top: 49%;
+    left: 5%;
+}
+
+#unitContent2_3{
+    top: 32%;
+    left: 51%;   
+}
+
+#unitContent3_1{
+    top: 60%;
+    left: 51%;   
+}
+
+#unitContent3_2{
+    top: 49%;
+    left: 5%;   
+}
+
+#unitContent3_3{
+    top: 32%;
+    left: 51%;   
+}
+
+
+.unitTitle{
+    width: 100%;
+    height: 47%;
+    position: relative;   
+}
+
+.titleImage{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;   
+}
+
+.unitTotal{
+    width: 30%;
+    height: 34%;
+    position: absolute;
+    top: 42%;
+    left: 51%;
+    text-align: center;
+    font-family: 微软雅黑;
+    color: white;   
+}
+
+.unitTotal2{
+    width: 30%;
+    height: 36%;
+    position: absolute;
+    top: 46%;
+    left: 19%;
+    text-align: center;
+    font-family: 微软雅黑;
+    color: white;   
+}
+
+.locking{
+    height: 55%;
+    position: absolute;
+    top: -20%;
+    left: 10%;   
+}
+
+.unitInfo{
+    background-image: url(../pic/barrier-chall.png);
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    padding: 2%;
+    display: table;
+    text-align: center;
+}
+
+.challDiv{
+    margin: auto;
+    display: inline-block;
+    border: 1px solid RGBA(0,0,0,0);
+}
+
+.challenge{
+    height: 35px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.challStar1{
+    height: 8px;
+    display: inline;
+}
+
+.challStar2{
+    height: 8px;
+    display: inline;   
+}
+
+.challStar3{
+    height: 8px;
+    display: inline;
+}
+
+.challengeTitle{
+    font-family: 微软雅黑;
+    color: white;
+    font-size: 0.01rem;
+    width: 35px;
+    overflow: hidden;
+    height: 15px;
+}
+/*
+.challengeTitleInfo{
+    transform: scale(0.6);   
+}*/
+
+.lastPage{
+    width: 10%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 36%;
+    bottom: 0;
+    background-image: url(../pic/lastPage.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: auto;   
+    cursor: pointer;
+}
+
+.nextPage{
+    width: 10%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 54%;
+    bottom: 0;
+    background-image: url(../pic/nextPage.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: auto; 
+    cursor: pointer;
+}
+
+
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 115%;
+    top: 0;
+    left: 0;   
+}
+
+.barrierLock{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../pic/barrier-chall.png);
+    background-size: 100%;
+    background-position: 50%;
+    z-index: 4;
+}
+
+.barrierLocking{
+    height: 30%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 30%;   
+}
+
+.lockBtn{
+    height: 8%;
+    position: absolute;
+    top: 53%;
+    right: 0;
+    left: 0;
+    margin: auto;   
+}

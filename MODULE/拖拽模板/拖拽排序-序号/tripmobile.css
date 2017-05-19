@@ -1,0 +1,150 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+     
+    width: 100%;
+    height: 100%;
+    
+}
+
+.bigger{
+    
+    width: 102%;
+    height: 105%;
+    margin: auto;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.headTitle{
+    padding: 3%;
+    width: 95%;
+    margin: auto;  
+}
+
+.titleImage{
+    width: 160px;
+}
+
+.title{
+    position: relative;
+    font-family: 微软雅黑; 
+    color: #006555;
+    margin-top: -120px;
+    margin-left: 148px;
+    font-size: 290%;  
+}
+
+.titleHr{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+.tripContent{
+    border: 2px #006555 solid;
+    border-radius: 15px;
+    margin: auto;
+    font-size: 100%;
+    word-break: break-all;
+    font-family: 微软雅黑;
+    padding-left: 12px;  
+    background-color:white;
+    width: 86%;
+    margin-bottom: 20px;
+    padding: 2%;
+    font-size: 240%; 
+}
+
+.number{
+    display: inline-block;
+    font-family: 微软雅黑;
+    background-color: #006555;
+    color: white;
+    border-radius: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.content{
+    position: relative;
+    width: 94%;
+    margin-left: 0%;
+    margin-top: -5%;
+    margin-left: 8%; 
+}
+
+.tip{
+    background-image: url(./pic/tip.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    width: 579px;
+    height: 100px;
+    margin-left: 4%;
+    margin-top: 38px;  
+}
+
+.submitBtn{
+    position: relative;
+    background-image: url(./pic/submitBtn.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: white;
+    width: 394px;
+    height: 120px;
+    padding-top: 75px;
+    margin-left: 58%;
+    margin-top: -30px;
+    font-size: 270%; 
+}
+
+
+.dialogblank{
+    position:fixed;  
+    top: 0%;
+    left: 0%;
+    width: 102%;
+    height: 100%; 
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.dialog{
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    width: 102%;
+    height: 100%;
+    background-image: url(./pic/wrong2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+@media screen and (min-width:700px) and (min-height:800px){
+    .dialog{
+        position: fixed;
+        background-image: url(./pic/wrong.png);     
+    }
+}

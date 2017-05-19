@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-left: 0.5%;
+}
+
+.type{
+    margin-left: 2px;
+    width: 55%;
+    position: relative;
+    height: 75%;
+    margin-top: 2%;
+    display: table;
+    text-align: center;
+}
+
+.typeBox{
+    border: 2px #499086 solid;
+    margin-bottom: 15px;
+    width: 97%;
+    height: 43%;
+    border-radius: 13px;
+    padding: 1%;
+    padding-top: 5%;
+    position: relative;
+    margin-bottom: 5%;
+    background-color: #fff;
+    overflow: auto;
+    margin-top: -3%;
+}
+
+.typeBoxTitle{
+    display: inline-block;
+    font-family: 微软雅黑;
+    color: #fff;
+    background-color: #006555;
+    padding-left: 1%;
+    padding-right: 1%;
+    position: relative;
+    font-size: 200%;/*pc 120*/
+    margin: 0 auto;
+    margin-bottom: 0%;
+    z-index: 2;
+}
+
+.specific{
+    height: 70%;
+    width: 40%;
+    padding-top: 0%;
+    margin-left: 58.5%;
+    position: relative;
+    margin-top: -37.5%;
+}
+
+.specification{
+    width: 99%;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    text-align: center;
+    box-shadow: 3px 3px 9px #999;
+    background-color: #fff;
+    font-family: 微软雅黑;
+    font-size: 180%;
+    margin-bottom: 20px;
+}
+
+.specification3{
+    width: 74%;
+    padding-top: 1.4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1.4%;
+    text-align: center;
+    box-shadow: 3px 3px 9px #999;
+    background-color: #fff;
+    font-family: 微软雅黑;
+    font-size: 180%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.specification2{
+    width: 99%;
+    text-align: center;
+    background-color: #aaa;
+    margin-bottom: 10px;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    font-family: 微软雅黑;
+    font-size: 180%;
+    margin-bottom: 20px;
+}
+
+.specification4{
+    width: 74%;
+    padding-top: 1.4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1.4%;
+    text-align: center;
+    box-shadow: 3px 3px 9px #999;
+    background-color: #fff;
+    font-family: 微软雅黑;
+    font-size: 180%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #910000;
+}
+
+.innerSpec{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;   
+}
+
+h2 {
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: #006555;
+    background-image: url(./pic/title.png);
+    background-size: 102% 102%;
+    background-position: center;
+    padding: 3%;
+    padding-left: 8%;
+    font-size: 260%;
+}
+
+
+
+.submitBtn{
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    font-size: 200%;
+    color: #fff;
+    background-image: url(./pic/submitBtn.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 17%;
+    height: 14%;
+    background-position: center;
+    line-height: 130px;
+    position: relative;
+    margin-left: 85%;
+    margin-top: -0.7%;
+}
+
+.bigger{
+    height:  100%;
+    width: 100%;
+    position: relative;
+    transform: rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+    -moz-transform:rotate(90deg); 	 /*Firefox */
+    -webkit-transform:rotate(90deg);
+    top: 19.6%;
+    left: -30%;
+}
+
+.dialog{
+    position: fixed;
+    width: 102%;
+    height: 102%;
+    top: 0;
+    left: 0;
+    background-image: url(./pic/right.png);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: auto 100%;
+    z-index: 101;
+}
+
+.dialogBlank{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 102%;
+    height: 102%;
+    background-color: #666;
+    opacity: 0.7;
+    background-size: 100% 100%;   
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.tip{
+    background-image: url(./pic/tip.png);
+    width: 520px;
+    height: 60px;
+    background-size: 100%;
+    position: relative;
+    margin-left: 54%;   
+    margin-top: 0.4%;
+}
+
+::webkit-scrollbar{
+    background-color: #999;
+    border: 0px;
+    border-radius: 4px;
+}

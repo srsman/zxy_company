@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 95%;
+    height: 90%;
+    padding: 2%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.title{
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color: rgb(0, 101, 85);
+    background-image: url("../image/title.png");
+    background-size: 102% 102%;
+    font-size: 180%;
+    background-position: 28% 50%;
+    padding: 3% 3% 3% 8%;   
+}
+
+.commitAnswer{
+    padding: 2%;
+    padding-left: 8%;
+    width: 88%;
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 50%;
+    border: 2px solid #006555;
+    border-radius: 30px;
+    background-color: #eee;
+    font-family: 微软雅黑;
+    font-size: 130%;   
+    line-height: 2.0;
+    outline: none;
+}
+
+.UserAnswer{
+    position: relative;
+    width: 50px;
+    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: -6%;
+    margin-left: 2%;
+    font-size: 130%;
+    font-family: 微软雅黑;
+    color: #fff;
+    background-color: #006555;
+    z-index: 2;
+}
+
+.submitBtn{
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    font-size: 140%;
+    color: rgb(255, 255, 255);
+    background-image: url("../image/submitBtn.png");
+    background-size: 100%;
+    width: 230px;
+    height: 100px;
+    line-height: 90px;
+    position: relative;
+    margin-left: 82%;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.littleTip{
+    width: 34%;
+    height: 35px;
+    position: relative;
+    margin-left: 40%;
+    background-image: url(../image/tip.png);
+    background-size: 100% 100%;
+}
+
+.imageStyle{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.wrongBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.rightBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.floormode{
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.tip{
+    background-image: url(../image/tip.png);
+    width: 25%;
+    height: 35px;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    left: 60%;
+    top: 5%;    
+}

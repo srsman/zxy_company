@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>trip-up-down</title>
+    <link rel="stylesheet" id="CSSlink">
+    <script type="text/javascript" language="javascript" src="js/APIWrapper.js"></script>
+    <script type="text/javascript" language="javascript" src="js/SCOFunctions.js"></script>
+    <script>
+        (function(){
+            if(/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)){
+                document.getElementById("CSSlink").href = "tripmobile.css";   
+            }
+            else {
+                document.getElementById("CSSlink").href = "trip.css";  
+            }
+        })();
+    </script>
+</head>
+
+<body onLoad="loadPage();doContinue('completed');">
+    <div class="bigger" id="bigger">
+        
+        <div class="container" id="container">
+            <div class="headTitle" id="headTitle">
+                <img src="./pic/title.png" alt="" class="titleImage">
+                <!--            标题内容填写在这里-->
+                
+                <h2 class="title" id="title">学习完滚刀式切丝机磨刀砂轮的更换方法，请将其正确的操作顺序排列出来！</h2>
+            
+            </div>
+            
+            <hr class="titleHr">
+            <div id="showout">
+            <div class="tripContent" id="1">
+                <div class="number"></div>
+                <p class="content">翻转砂轮架</p>
+            </div>
+            <div class="tripContent" id="2">
+                <div class="number"></div>
+                <p class="content">拆、装砂轮</p>
+            </div>
+            <div class="tripContent" id="3">
+                <div class="number"></div>
+                <p class="content">旋出压紧螺钉</p>
+            </div>
+            <div class="tripContent" id="4">
+                <div class="number"></div>
+                <p class="content">旋进安全销</p>
+            </div>
+            <div class="tripContent" id="5">
+                <div class="number"></div>
+                <p class="content">松开进给锁紧螺钉</p>
+            </div>
+            <div class="tripContent" id="6">
+                <div class="number"></div>
+                <p class="content">逆向旋转砂轮进给轴</p>
+            </div>
+            <div class="tripContent" id="7">
+                <div class="number"></div>
+                <p class="content">向下扳动手柄</p>
+            </div>
+            </div>
+            <div class="tip" id="tip"></div>
+            <div class="submitBtn" id="submitBtn">
+                提交
+            </div>
+        </div>
+    </div>
+    <dic class="dialogblank" id="dialogBlank"></dic>
+    <div class="dialog" id="dialog" ></div>
+            
+    <audio src="pic/right.wav" id="rightVideo" hidden="hidden"></audio>
+    <audio src="pic/wrong.wav" id="wrongVideo" hidden="hidden"></audio>
+</body>
+    <script src="trip.js"></script>
+</html>

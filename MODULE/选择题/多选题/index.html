@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初级打叶复烤工4.1《质量检验》互动练习</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="" id="mobileCss">
+    <script>
+        (function(){
+            if((/iPhone|IOS|iPhone|iPad|Android/).test(window.navigator.userAgent)){
+                document.getElementById("mobileCss").setAttribute("href","css/indexMobile.css");   
+            }
+        
+        })();
+    </script>
+</head>
+<body>
+    <div class="container" id="container">
+        <h2 class="title" id="title">
+            下面是多选题，请作答！
+        </h2>
+        <div class="content" id="content" optionCount="4">
+            <div class="question" id="question">
+                打叶复烤生产过程质量检验的内容包括(&nbsp;&nbsp;)?
+            </div>
+            <div class="choose" id="choose1">
+                <div class="checkClick"></div>
+                <div class="chooseContent">A: 原材料检验</div>
+            </div>
+            <div class="choose" id="choose2">
+                <div class="checkClick"></div>
+                <div class="chooseContent">B: 在制品检验</div>
+            </div>
+            <div class="choose" id="choose3">
+                <div class="checkClick"></div>
+                <div class="chooseContent">C: 成品检验</div>
+            </div>
+            <div class="choose" id="choose4">
+                <div class="checkClick"></div>
+                <div class="chooseContent">D: 专项检验</div>
+            </div>
+        </div>
+        <div class="tips" id="tips" hidden="hidden"></div>
+        <div class="submitBtn" id="submitBtn">提交</div>
+    </div>
+    <div class="wrongBack" id="wrongBack" hidden="hidden">
+        <div class="mooc"></div>
+        <img src="image/plankt.png" alt="" class="imageStyle" id="plankt" hidden="hidden">
+        <img src="image/wrongMobile.png" alt="" class="imageStyle" id="wrongImage">
+    </div>
+    <div class="rightBack" id="rightBack" hidden="hidden">
+        <div class="mooc"></div>
+        <img src="image/rightMobile.png" alt="" class="imageStyle" id="rightImage">
+    </div>
+    <audio src="image/wrong.wav" id="wrongSong"></audio>
+    <audio src="image/right.wav" id="rightSong"></audio>
+</body>
+    <script src="js/index.js"></script>
+</html>
